@@ -202,12 +202,12 @@
                 class="flex justify-between border-dotted border-t-2 border-b-2 py-3"
               >
                 <div class="flex">
-                  <img src="./images/seat-gray.png" />
+                  <img src="./images/seat-gray.png" class="h-6 w-8 mr-2"/>
                   <p>Available</p>
                 </div>
                 <div class="flex">
                   <img src="./images/seat-green-filled.png" />
-                  <p class="font-bold text-xl text-[#1DD100]">Selected</p>
+                  <p class="font-bold text-sm text-[#1DD100] mt-1 ml-2">Selected</p>
                 </div>
               </div>
 <div class=" flex justify-end my-5">
@@ -408,8 +408,8 @@
 
        
         function updateSelectedSeats() {
-            const selectedItemsContainer = document.querySelector("#selected-items");
-            selectedItemsContainer.innerHTML = "";
+            const selectedItemsList = document.querySelector("#selected-items");
+            selectedItemsList.innerHTML = "";
 
             const selectedSeats = document.querySelectorAll(".seat.bg-green-600");
             selectedSeats.forEach((seat) => {
@@ -424,7 +424,7 @@
                 listItem.appendChild(selectedSeatElement);
                 listItem.appendChild(economyElement);
                 listItem.appendChild(priceElement);
-                selectedItemsContainer.appendChild(listItem);
+                selectedItemsList.appendChild(listItem);
             });
 
             const totalSelectedElement = document.querySelector("#total-selected");
