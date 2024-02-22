@@ -456,6 +456,35 @@
         seatBooking(seatButton);
     });
         });
+        document.addEventListener("DOMContentLoaded", function() {
+    
+    const nameInput = document.querySelector('input[placeholder="Enter your name"]');
+    const phoneInput = document.querySelector('input[placeholder="Enter your number"]');
+    const emailInput = document.querySelector('input[placeholder="Enter your email"]');
+    const nextButton = document.querySelector(".btn[onclick='my_modal_1.showModal()']");
+
+   
+    function checkInputs() {
+        const nameValue = nameInput.value;
+        const phoneValue = phoneInput.value;
+        const emailValue = emailInput.value;
+
+        
+        if (nameValue !== "" || phoneValue !== "" || emailValue !== "") {
+            nextButton.disabled = false;
+        } else {
+            nextButton.disabled = true;
+        }
+    }
+
+    
+    nameInput.addEventListener("input", checkInputs);
+    phoneInput.addEventListener("input", checkInputs);
+    emailInput.addEventListener("input", checkInputs);
+
+    nextButton.disabled = true;
+});
+
     </script>
   </body>
 </html>
