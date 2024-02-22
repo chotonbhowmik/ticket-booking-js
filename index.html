@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root,
+      [data-theme] {
+        background-color: white;
+        color: black;
+      }
+      header {
+         font-family: "Raleway", sans-serif;
+      }
+      main {
+         font-family: "Raleway", sans-serif;
+      }
+      p {
+        color: #3e3e3e;
+         font-family: "Raleway", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="lg:mx-[10%] mx-[5%]">
+      <div class="navbar bg-base-100 pt-5">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <p>Choton ParibAabhan</p>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="hover:text-red-400 font-bold"><a>Home</a></li>
+
+              <li class="hover:text-red-400 font-bold"><a>About</a></li>
+              <li class="hover:text-red-400 font-bold"><a>Blog</a></li>
+              <li class="hover:text-red-400 font-bold"><a>Contact</a></li>
+            </ul>
+          </div>
+          <p class="font-semibold text-3xl">Dream <span class="text-[#1DD100]">Paribahan</span></p>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="hover:text-red-400 hover:bg-transparent"><a>Home</a></li>
+
+            <li class="hover:text-red-400"><a>About</a></li>
+            <li class="hover:text-red-400"><a>Blog</a></li>
+            <li class="hover:text-red-400"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-5">
+          <button class="btn bg-[#1DD1001A] flex">
+            <img src="./images/bus-icon.png" />
+            Bus
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="lg:mx-[10%] mx-[5%]">
+      <!-- banner section start -->
+      <div
+        class="hero min-h-screen rounded-2xl"
+        style="background-image: url(./images/banner.png)"
+      >
+        <div class=""></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <h1 class="mb-5 text-6xl font-extrabold">
+              End-to-End Travel with <br /><span class="text-[#1DD100]"
+                >Dream Paribahan</span
+              >
+            </h1>
+            <p class="mb-5 text-white">
+              Embark on a seamless journey with P Paribahan, where comfort meets
+              efficiency at every turn.<br />
+              Experience travel redefined, where every mile is a testament to
+              our commitment to excellence
+            </p>
+            <a
+              href="#buy-ticket"
+              class="btn bg-[#1DD100] font-bold text-xl border-0"
+            >
+              Buy Tickets
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- banner section end -->
+
+      <section class="text-center">
+        <h1 class="text-black font-bold text-xl my-10">Best offers for you</h1>
+        <div class="offer-section flex">
+          <img src="./images/Group 113.png" />
+          <img src="./images/ticket.png" />
+        </div>
+        <button class="btn btn-outline btn-success mx-auto my-5">
+          See All Offers
+        </button>
+      </section>
+      <section id="buy-ticket" class="bg-[#F7F8F8] mt-20 border-t-2 rounded-2xl border-[#1DD100]">
+        <p class="text-[#030712] font-bold text-4xl text-center pt-10">
+          Dream Paribahan
+        </p>
+        <p class="text-center">
+          Embark on a seamless journey with P Paribahan, where comfort meets
+          efficiency at every turn.<br />
+          Experience travel redefined, where every mile is a testament to our
+          commitment to excellence
+        </p>
+        <div class="card p-5 bg-[#FFFFFF] m-10">
+          <div class="flex">
+            <div class="left-side mr-10 w-2/3">
+              <div class="flex justify-between">
+                <div class="left-part flex">
+                  <div>
+                    <img src="./images/bus-logo.png" />
+                  </div>
+                  <div class="ml-2 pl-4">
+                    <p class="font-bold text-2xl text-[#030712] ">
+                      Dream Paribahan
+                    </p>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div class="right-part">
+                  <button class="btn bg-[#1DD1001A] flex">
+                    <img src="./images/seat-green.png" />
+                    <span id="seats-left">8 Seats left</span>
+                  </button>
+                </div>
+              </div>
+              <div class="bg-[#F7F8F8] rounded-2xl p-5 mt-5">
+                <div class="border-b-2 border-dotted py-5">
+                  <div class="flex justify-between">
+                    <p>Route</p>
+                    <p>Dhaka - Sylhet</p>
+                  </div>
+                </div>
+                <div class="border-b-2 border-dotted py-5">
+                  <div class="flex justify-between">
+                    <p>Departure Time</p>
+                    <p>9 PM</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <button class="btn mx-auto my-5 bg-[##000001]">
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button class="btn mx-auto my-5 bg-[##000001]">
+                    Dropping Point - Bogura
+                  </button>
+                  <button class="btn mx-auto my-5 bg-[##000001]">
+                    Est. Time - 11 Hour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right-side flex flex-col justify-center items-center border-dotted border-l-2 pl-20"
+            >
+              <img src="./images/fare.png" class="mx-auto" />
+              <div class="text-center">
+                <p class="text-[#030712] text-3xl">550 Taka</p>
+                <p>Per Seat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 bg-[#FFFFFF] m-10">
+          <div class="flex">
+            <div class="left-side mr-10 w-full">
+              <p class="font-semibold text-2xl color-[#030712] pb-5">
+                Select Your Seat
+              </p>
+              <div
+                class="flex justify-between border-dotted border-t-2 border-b-2 py-3"
+              >
+                <div class="flex">
+                  <img src="./images/seat-gray.png" />
+                  <p>Available</p>
+                </div>
+                <div class="flex">
+                  <img src="./images/seat-green-filled.png" />
+                  <p class="font-bold text-xl text-[#1DD100]">Selected</p>
+                </div>
+              </div>
+<div class=" flex justify-end my-5">
+  <img src="./images/seat.png">
+</div>
+              <div class="flex flex-wrap justify-center ">
+                
+                <button class="seat-start m-4">A</button>
+
+                <button
+                  class="seat m-4 bg-[#F7F8F8] rounded-md px-7  col-span-1 py-2 "
+                >
+                  A1
+                </button>
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md col-span-1">
+                  A2
+                </button>
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md col-span-1">
+                  A3
+                </button>
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md col-span-1">
+                  A4
+                </button>
+              </div>
+              <div class="flex flex-wrap justify-center ">
+                <button class="seat-start m-4">B</button>
+
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md p-2">B1</button>
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md">B2</button>
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md">B3</button>
+                <button class="seat m-4 bg-[#F7F8F8] px-7 rounded-md">B4</button>
+              </div>
+            </div>
+            <div class="right-side border-dotted border-l-2 px-8 w-full">
+              <p class="font-semibold text-2xl color-[#030712] pb-5 border-dotted border-b-2">
+                Select Your Seat
+              </p>
+              <div class="bg-[#F7F8F8] p-5 rounded-xl mt-5">
+                <div class="flex space-x-9 border-dotted border-b-2 p-5">
+                  <p id="total-selected" class="w-1/3 font-medium">
+                    Seat :
+                    <span class="bg-green-500" id="total-item-selected">0</span>
+                  </p>
+                  <p class="w-1/3 font-medium">Class</p>
+                  <p class="w-1/3 font-medium">Price</p>
+                </div>
+                <!-- <ul id="selected-seats" class="space-y-2"></ul> -->
+                <div id="selected-items" class="space-y-2">
+                  <div class="flex space-x-9 p-5">
+                    <p class="w-1/3"></p>
+                    <p class="w-1/3" id="selected-seat"></p>
+                    <p class="w-1/3"></p>
+                  </div>
+                </div>
+                <div class="flex space-x-9 border-t-2 p-5">
+                  <p class="w-2/3">Total Price</p>
+                  <!-- <p></p> -->
+                  <p id="total-price" class="w-1/3">0 tk</p>
+                </div>
+                <div
+                  class="flex items-center bg-white  py-2 rounded-xl"
+                >
+                  <input
+                    class="appearance-none bg-white border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                    type="text"
+                    placeholder="Have any coupon"
+                  />
+                  <button
+                    class="flex-shrink-0 bg-[#1DD100] rounded-xl text-sm border-4 text-white py-1 px-2 "
+                    type="button"
+                  >
+                    Apply
+                  </button>
+                </div>
+                <div class="flex space-x-9 p-5">
+                  <p class="w-2/3">Grand Total</p>
+                  <!-- <p></p> -->
+                  <p id="total-price" class="w-1/3">0 tk</p>
+                </div>
+              </div>
+              <label class="form-control w-full  mt-3">
+                <div class="label">
+                  <span class="label-text font-semibold">Passenger Name*</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full "
+                />
+              </label>
+              <label class="form-control w-full  mt-3">
+                <div class="label">
+                  <span class="label-text font-semibold">Phone Number*</span>
+                </div>
+                <input
+                  type="number"
+                  placeholder="Enter your number"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <label class="form-control w-full  mt-3">
+                <div class="label">
+                  <span class="label-text font-semibold">Email ID</span>
+                </div>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full "
+                />
+              </label>
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn mt-5 w-full bg-[#1DD100]"
+                onclick="my_modal_1.showModal()"
+              >
+                Next
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box text-center">
+                  <img src="./images/success.png" class="mx-auto mb-3">
+                  <h3 class="font-bold text-lg text-green-500">SUCCESS</h3>
+                  <p class="py-4">
+                    Thank you for Booking Our Bus Seats. We are working hard to
+                    find the best service and deals for you. Shortly you will
+                    find a confirmation in your email.
+                  </p>
+                  <button class="btn mt-5 w-full bg-[#1DD100] rounded-full">
+                    Continue
+                  </button>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section start -->
+    <section class="bg-[#131318]">
+      <footer
+        class="footer p-10 bg-[#131318] text-white text-base-content lg:px-[10%] px-[5%]"
+      >
+        <aside class="flex-1">
+          <p class="text-white text-2xl">Get In Touch</p>
+          <p class="text-white">
+            Addressing Clients' Questions with precision and<br />
+            expertise to ensure satisfaction and clarity.
+          </p>
+          <div class="flex gap-5 justify-center text-center mt-5">
+            <i class="fa-solid fa-phone"></i>
+            <p class="text-white">(+62) 123-321-543</p>
+          </div>
+          <div class="flex gap-5 justify-center text-center">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="text-white">(+62) 123-321-543</p>
+          </div>
+        </aside>
+        <div class="flex flex-row lg:flex-row gap-11">
+          <nav>
+            <header class="text-white text-lg mb-5">Company</header>
+            <a class="link link-hover">Branding</a><br />
+            <a class="link link-hover">Design</a><br />
+            <a class="link link-hover">Marketing</a><br />
+            <a class="link link-hover">Advertisement</a>
+          </nav>
+          <nav class="">
+            <header class="text-white text-lg mb-5">Support</header>
+            <a class="link link-hover">Branding</a><br />
+            <a class="link link-hover">Design</a><br />
+            <a class="link link-hover">Marketing</a><br />
+            <a class="link link-hover">Advertisement</a>
+          </nav>
+        </div>
+        <nav>
+          <header class="text-white text-lg mb-5">Services</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+    </section>
+ <script>
+        let seatsLeft = 8; 
+        const maxSeats = 4 ; 
+
+       
+        function seatBooking(seatButton) {
+            if (document.querySelectorAll(".seat.bg-green-600").length >= maxSeats) {
+                alert("You have already selected the maximum number of 4 seats.");
+                return;
+            }
+
+            seatButton.classList.toggle("bg-green-600");
+            seatButton.disabled = true; 
+            updateSelectedSeats();
+            calculateTotalPrice();
+            updateSeatsLeft();
+        }
+
+       
+        function updateSelectedSeats() {
+            const selectedItemsContainer = document.querySelector("#selected-items");
+            selectedItemsContainer.innerHTML = "";
+
+            const selectedSeats = document.querySelectorAll(".seat.bg-green-600");
+            selectedSeats.forEach((seat) => {
+                const listItem = document.createElement("div");
+                listItem.classList.add("flex", "space-x-9", "p-5");
+                const selectedSeatElement = document.createElement("p");
+                selectedSeatElement.textContent = seat.textContent;
+                const economyElement = document.createElement("p");
+                economyElement.textContent = "Economy";
+                const priceElement = document.createElement("p");
+                priceElement.textContent = "550";
+                listItem.appendChild(selectedSeatElement);
+                listItem.appendChild(economyElement);
+                listItem.appendChild(priceElement);
+                selectedItemsContainer.appendChild(listItem);
+            });
+
+            const totalSelectedElement = document.querySelector("#total-selected");
+            totalSelectedElement.textContent = "Seat : " + selectedSeats.length;
+        }
+
+        
+        function calculateTotalPrice() {
+            const selectedSeats = document.querySelectorAll(".seat.bg-green-600");
+            const totalPriceElement = document.querySelector("#total-price");
+            const totalPrice = selectedSeats.length * 550;
+            totalPriceElement.textContent = "Total Price: " + totalPrice;
+        }
+
+       
+        function updateSeatsLeft() {
+            const seatsLeftElement = document.getElementById("seats-left");
+            const selectedSeatsCount = document.querySelectorAll(".seat.bg-green-600").length;
+            seatsLeft = 8 - selectedSeatsCount;
+            seatsLeftElement.textContent = seatsLeft + " Seats left";
+        }
+
+       
+        const seatButtons = document.querySelectorAll(".seat");
+        seatButtons.forEach(function(seatButton) {
+    
+    seatButton.addEventListener("click", function() {
+       
+        seatBooking(seatButton);
+    });
+        });
+    </script>
+  </body>
+</html>
